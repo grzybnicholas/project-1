@@ -47,7 +47,7 @@ using namespace std;
 @post : sets pageCount to the value of the parameter, if its a positive integer
 */
   void Book::setPageCount(const int& page_count){
-   if(pageCount >0){
+   if(page_count >0){
     this->page_count = page_count;
      }
   }
