@@ -68,9 +68,9 @@ post : sets the value of digitial to be true
  */
   bool Book::isDigital(){
     if(digital == true){
-      return digital;
+      return true;
     } else {
-      digital = false;
+      return false;
       }
     }
   
