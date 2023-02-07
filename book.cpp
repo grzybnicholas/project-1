@@ -66,8 +66,8 @@ post : sets the value of digitial to be true
 /**
  return: true if the book has a digital form, false otherwise
  */
-  bool Book::isDigital(){
-    if(digital == true){
+  bool Book::isDigital() const{
+    if(digital == 1){
       return true;
     } else {
       return false;

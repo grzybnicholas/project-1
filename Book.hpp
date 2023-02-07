@@ -22,7 +22,7 @@ public:
   void setPageCount(const int& page_count);
   int getPageCount() const;
   void setDigital();
-  bool isDigital(); 
+  bool isDigital() const; 
 
 };
 
