@@ -13,7 +13,7 @@ private:
   int page_count;
   bool digital_;
 public:
-  Book() = default;
+  Book();
   Book(string title_,string author_,int page_count,bool digital_);
   void setTitle(const string& title_);
   string getTitle() const;

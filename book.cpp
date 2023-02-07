@@ -2,6 +2,16 @@
 #include <iostream>
 #include <string>
 using namespace std;
+/** Default constructor
+ Initialize all of the private member data types in the book class
+*/
+Book::Book(){
+  title_= "";
+  author_= "";
+  page_count_=0;
+  digital_=false;
+}
+
 /** Parameterized constructor
 param : title of the book that the user wants (a string)
 param : the author of said book(a string)
