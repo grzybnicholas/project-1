@@ -14,7 +14,7 @@ private:
   bool digital_;
 public:
   Book();
-  Book(string title_,string author_,int page_count,bool digital_);
+  Book(string title_,string author_,int page_count,bool digital_ = false);
   void setTitle(const string& title_);
   string getTitle() const;
   void setAuthor(const string& author_);

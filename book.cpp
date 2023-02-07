@@ -8,7 +8,7 @@ using namespace std;
 Book::Book(){
   title_= "";
   author_= "";
-  page_count_=0;
+  page_count=0;
   digital_=false;
 }
 
@@ -19,11 +19,10 @@ param : the amount of pages that the book has (a not negative integer)
 param : checks if the book has a digital form, but in this case it just sets it to its default value, which is false
 post : the private data members of the book class are set the values of the parameters
 */
-  Book::Book(string title_,string author_,int page_count,bool digital_){
+  Book::Book(string title_,string author_,int page_count,bool digital_ = false){
     this->title_ = title_;
     this->author_= author_;
     this->page_count = page_count;
-    this->digital_ = digital_;
   }
 /**
 @param : a copy of the book title
