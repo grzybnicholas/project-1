@@ -9,37 +9,37 @@ param : the amount of pages that the book has (a not negative integer)
 param : checks if the book has a digital form, but in this case it just sets it to its default value, which is false
 post : the private data members of the book class are set the values of the parameters
 */
-  Book::Book(string title,string author,int page_count,bool digital){
-    this->title = title;
-    this->author = author;
+  Book::Book(string title_,string author_,int page_count,bool digital_){
+    this->title_ = title_;
+    this->author_= author_;
     this->page_count = page_count;
-    this->digital = digital;
+    this->digital_ = digital_;
   }
 /**
 @param : a copy of the book title
 post: the book tilte becomes the value of the parameter
 */
-  void Book::setTitle(const string& title){
-    this->title = title;
+  void Book::setTitle(const string& title_){
+    this->title_ = title_;
   }
 /**
  return :the title of the book
 */
   string Book::getTitle() const{
-    return title;
+    return title_;
   }
 /**
 param : a copy of the book's author
 post : sets the value of author to the value of the parameter
 */
   void Book::setAuthor(const string& author){
-    this->author = author;
+    this->author_ = author_;
   }
 /**
 return : the author of the book
 */
   string Book::getAuthor() const{
-    return author;
+    return author_;
   }
 /**
 param : a positive integer
@@ -61,13 +61,13 @@ return : the value of pageCount
 post : sets the value of digitial to be true
 */
   void Book::setDigital(){
-    digital = true;
+    digital_ = true;
   }
 /**
  return: true if the book has a digital form, false otherwise
  */
   bool Book::isDigital() const{
-    if(digital == 1){
+    if(digital_ == 1){
       return true;
     } else {
       return false;

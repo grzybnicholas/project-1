@@ -8,16 +8,16 @@ using namespace std;
 class Book 
 {
 private:
-  string title;
-  string author;
+  string title_;
+  string author_;
   int page_count;
-  bool digital;
+  bool digital_;
 public:
   Book() = default;
-  Book(string title,string author,int page_count,bool digital = false);
-  void setTitle(const string& title);
+  Book(string title_,string author_,int page_count,bool digital_);
+  void setTitle(const string& title_);
   string getTitle() const;
-  void setAuthor(const string& author);
+  void setAuthor(const string& author_);
   string getAuthor() const;
   void setPageCount(const int& page_count);
   int getPageCount() const;
